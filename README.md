@@ -19,7 +19,7 @@ Snipcart for Statamic makes the setup of your Snipcart shop on Statamic a breeze
 
 ## License
 
-Snipcart for Statamic is **commercial software** but has an open-source codebase. If you want to use it in production, you'll need to [buy a license](https://statamic.com/marketplace/addons/translator) from the Statamic Marketplace.
+Snipcart for Statamic is **commercial software** but has an open-source codebase. If you want to use it in production, you'll need to buy a license from the Statamic Marketplace.
 
 {% hint style="danger" %}
 Snipcart for Statamic is **NOT** free software.
