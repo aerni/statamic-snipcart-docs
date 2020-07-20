@@ -9,7 +9,15 @@ description: Output data of the weight unit defined in the config.
 The abbreviation of the weight unit, e.g. `kg`.
 
 ```text
-{{ weight:abbr }}
+{{ weight:short }}
+```
+
+## Weight name
+
+The singular/plural name of the weight unit according to the value saved in the product, e.g. `Kilogram/Kilograms`.
+
+```text
+{{ weight:name }}
 ```
 
 ## Weight singular name
@@ -26,15 +34,5 @@ The plural name of the weight unit, e.g. `Kilograms`.
 
 ```text
 {{ weight:plural }}
-```
-
-## Tag pair
-
-Alternatively, you can also access this information with a tag pair.
-
-```text
-{{ weight }}
-    {{ abbr }} {{ singular }} {{ plural }}
-{{ /weight }}
 ```
 
