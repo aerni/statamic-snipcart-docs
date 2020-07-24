@@ -5,7 +5,6 @@
 ## Setup
 
 * [Installation](setup/installation.md)
-* [Template](setup/template.md)
 * [Configuration](setup/configuration.md)
 
 ## Templating
