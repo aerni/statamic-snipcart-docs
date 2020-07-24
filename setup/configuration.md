@@ -4,12 +4,13 @@ description: Configure the package to get started.
 
 # Configuration
 
-## Add API key
+## Add API keys
 
-Add your **Snipcart API key** to your `.env` file. You can find it in your [Snipcart dashboard](https://app.snipcart.com/dashboard/account/credentials).
+Add your **Snipcart API keys** to your `.env` file. You can find them in your [Snipcart dashboard](https://app.snipcart.com/dashboard/account/credentials).
 
 ```bash
-SNIPCART_API_KEY=************************
+SNIPCART_LIVE_KEY=************************
+SNIPCART_TEST_KEY=************************
 ```
 
 ## Configure package settings

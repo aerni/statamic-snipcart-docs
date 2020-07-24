@@ -1,22 +1,23 @@
----
-description: Install the package and run the setup command in your console.
----
-
 # Installation
 
 ## Install the package
 
-Install the **statamic-snipcart** package with Composer.
+**Option 1:** Install the package with Composer.
 
 ```bash
 composer require aerni/statamic-snipcart
 ```
 
-## Run the setup command
+**Option 2:** Install the addon through the Addons section in the Statamic Control Panel.
 
-This command will guide you through the setup of your Snipcart shop. It migrates the config file and creates the necessary blueprints, product collection, and category taxonomy to get you started.
+## Publish assets
 
-```bash
-php please snipcart:setup
+Publish the vendor assets including the addon's config and language files.
+
+```text
+php artisan vendor:publish --provider="Aerni\Snipcart\ServiceProvider"
 ```
+
+The **config** will be published to `config/snipcart.php`   
+The **language files** will be published to `resources/lang/vendor/snipcart`
 
