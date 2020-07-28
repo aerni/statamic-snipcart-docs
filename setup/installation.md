@@ -46,3 +46,12 @@ If you want more control, you may add the **container** and **script** separatel
 {{ snipcart:script }}
 ```
 
+## Add Snipcart API Keys
+
+Add your Snipcart API keys to your `.env` file. You can find the keys in your [Snipcart dashboard](https://app.snipcart.com/dashboard/account/credentials).
+
+```bash
+SNIPCART_LIVE_KEY=************************
+SNIPCART_TEST_KEY=************************ 
+```
+

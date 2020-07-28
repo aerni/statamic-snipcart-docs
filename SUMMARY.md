@@ -6,6 +6,7 @@
 
 * [Installation](setup/installation.md)
 * [Configuration](setup/configuration.md)
+* [Publish Assets](setup/publish-assets.md)
 
 ## Templating
 
