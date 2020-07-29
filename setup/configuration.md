@@ -6,7 +6,7 @@ description: There's a bunch of configuration options to tailor the addon to you
 
 ## Collections & Taxonomies
 
-Define the handles of the products collection and taxonomies. If you change a value, you need to run `php please snipcart:setup` to re-generate the collection/taxonomies and product blueprint.
+Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands) to re-generate the collection/taxonomies and product blueprint.
 
 ```php
 'collections' => [

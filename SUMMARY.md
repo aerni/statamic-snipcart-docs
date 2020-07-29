@@ -5,6 +5,7 @@
 ## Setup
 
 * [Installation](setup/installation.md)
+* [Commands](setup/commands.md)
 * [Publish Assets](setup/publish-assets.md)
 * [Configuration](setup/configuration.md)
 
