@@ -6,7 +6,7 @@ description: Output data of the currency defined in the config.
 
 ## Code
 
-The code of the currency, e.g. `USD`
+The code of the currency, e.g. `USD`.
 
 ```text
 {{ currency:code }}
@@ -14,7 +14,7 @@ The code of the currency, e.g. `USD`
 
 ## Name
 
-The name of the currency, e.g. `US Dollar`
+The name of the currency, e.g. `US Dollar`.
 
 ```text
 {{ currency:name }}
@@ -22,7 +22,7 @@ The name of the currency, e.g. `US Dollar`
 
 ## Symbol
 
-The symbol of the currency, e.g. `$`
+The symbol of the currency, e.g. `$`.
 
 ```text
 {{ currency:symbol }}

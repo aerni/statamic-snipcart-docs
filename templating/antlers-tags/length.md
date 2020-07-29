@@ -12,7 +12,7 @@ The abbreviation of the length unit, e.g. `cm`.
 {{ length:short }}
 ```
 
-## Name: length
+## Length Name
 
 The singular/plural name of the length unit for the length according to the value saved in the product, e.g. `Centimeter/Centimeters`.
 
@@ -20,7 +20,7 @@ The singular/plural name of the length unit for the length according to the valu
 {{ length:lengthName }}
 ```
 
-## Name: width
+## Width Name
 
 The singular/plural name of the length unit for the width according to the value saved in the product, e.g. `Centimeter/Centimeters`.
 
@@ -28,7 +28,7 @@ The singular/plural name of the length unit for the width according to the value
 {{ length:widthName }}
 ```
 
-## Name: height
+## Height Name
 
 The singular/plural name of the length unit for the height according to the value saved in the product, e.g. `Centimeter/Centimeters`.
 
