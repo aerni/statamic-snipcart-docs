@@ -54,6 +54,6 @@ Add your Snipcart API keys to your `.env` file. You can find the keys in your [S
 
 ```bash
 SNIPCART_LIVE_KEY=************************
-SNIPCART_TEST_KEY=************************ 
+SNIPCART_TEST_KEY=************************
 ```
 
