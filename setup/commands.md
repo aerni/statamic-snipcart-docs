@@ -4,7 +4,7 @@ description: There are a couple of helpful commands at your service.
 
 # Commands
 
-## Setup Command
+## Setup Content
 
 The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. It is careful enough to not override existing collections, taxonomies, and blueprints with the same handle.
 
