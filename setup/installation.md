@@ -1,5 +1,7 @@
 ---
-description: Install the addon and setup your views to get started.
+description: >-
+  Install the addon, setup your views and add your Snipcart API Keys to get
+  started.
 ---
 
 # Installation

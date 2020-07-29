@@ -1,10 +1,91 @@
 ---
-description: Configure the package to get started.
+description: There's a bunch of configuration options to tailor the addon to your needs.
 ---
 
 # Configuration
 
-## Configure package settings
+## Collections & Taxonomies
 
-Make sure to review the package config published to `config/snipcart.php` to get an overview of the available settings and options.
+Define the handles of the products collection and taxonomies. If you change a value, you need to run `php please snipcart:setup` to re-generate the collection/taxonomies and product blueprint.
+
+```php
+'collections' => [
+    'products' => 'products',
+],
+
+'taxonomies' => [
+    'categories' => 'categories',
+    'taxes' => 'taxes',
+]
+```
+
+## Snipcart API Keys
+
+Your Snipcart API Keys for the Live and Test Environment.
+
+```php
+'live_key' => env('SNIPCART_LIVE_KEY'),
+'test_key' => env('SNIPCART_TEST_KEY'),
+```
+
+## Test Mode
+
+Set this to `false` to start processing real transactions. You probably want to do this in production only.
+
+```php
+'test_mode' => env('SNIPCART_TEST_MODE', true),
+```
+
+## Snipcart Version
+
+The Snipcart version you want to use.
+
+```php
+'version' => '3.0.17',
+```
+
+## Currency
+
+Define the currency you want to use.
+
+```php
+'currency' => 'USD',
+```
+
+## Length Unit
+
+Define the length unit you want to use.   
+You can choose between the following options: `cm` `m` `in` `ft`
+
+```php
+'length' => 'cm',
+```
+
+## Weight Unit
+
+Define the weight unit you want to use.   
+You can choose between the following options: `g` `kg` `oz` `lb`
+
+```php
+'weight' => 'g',
+```
+
+## Cart Summary Behaviour
+
+Setting this to `none` prevents the cart from opening every time a product is added. Default: `null`
+
+```php
+'behaviour' => null,
+```
+
+## Cart Image Manipulation Settings
+
+Define a Glide preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `'manipulation' => false`
+
+```php
+'image' => [
+    'manipulation' => true,
+    'preset' => ['w' => 240, 'q' => 75],
+]
+```
 
