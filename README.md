@@ -13,10 +13,9 @@ Snipcart for Statamic makes the setup of your Snipcart shop on Statamic a breeze
 
 ## Requirements
 
-* Snipcart account
+* Snipcart Account
 * Statamic 3
-* PHP &gt;= 7.4
-* Laravel 7
+* PHP &gt;= 7.2.5
 
 ## License
 
