@@ -2,13 +2,14 @@
 
 ## Snipcart for Statamic
 
-Snipcart for Statamic makes the setup of your Snipcart shop on Statamic a breeze. Read the official [Snipcart documentation](https://docs.snipcart.com/v3/) for more information about how to set up your shop.
+Snipcart for Statamic makes the setup of your Snipcart shop on Statamic a breeze. Consult the official [Snipcart documentation](https://docs.snipcart.com/v3/) for more information about how to set up your shop.
 
 ## Features
 
-* Simple installation and setup
-* Automatically generated product attributes
-* Optimized blueprint with all the fields accepted by Snipcart
+* Easy installation and setup of your Snipcart shop
+* Antlers Tag to automatically create Snipcart product buttons
+* Optimized Blueprint containing all the fields accepted by Snipcart
+* Complete support of Custom Fields to create product variants, text fields etc.
 
 ## Requirements
 

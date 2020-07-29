@@ -1,4 +1,4 @@
-# Basics
+# Products
 
 ## Product collection
 

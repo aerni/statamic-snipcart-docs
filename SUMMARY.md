@@ -10,15 +10,15 @@
 
 ## Templating
 
-* [Basics](templating/basics.md)
-* [Tags](templating/tags/README.md)
-  * [Snipcart](templating/tags/snipcart.md)
-  * [Currency](templating/tags/currency.md)
-  * [Length](templating/tags/length.md)
-  * [Weight](templating/tags/weight.md)
+* [Products](templating/basics.md)
+* [Antlers Tags](templating/antlers-tags/README.md)
+  * [Snipcart](templating/antlers-tags/snipcart.md)
+  * [Currency](templating/antlers-tags/currency.md)
+  * [Length](templating/antlers-tags/length.md)
+  * [Weight](templating/antlers-tags/weight.md)
 
 ## Customization
 
 * [Blueprints](customization/blueprints.md)
-* [Localization](customization/localization.md)
+* [Translations](customization/translations.md)
 
