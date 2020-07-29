@@ -5,8 +5,8 @@
 ## Setup
 
 * [Installation](setup/installation.md)
-* [Commands](setup/commands.md)
 * [Configuration](setup/configuration.md)
+* [Commands](setup/commands.md)
 
 ## Templating
 
