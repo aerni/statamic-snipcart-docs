@@ -27,6 +27,5 @@ Snipcart for Statamic is **NOT** free software.
 
 ## Credits
 
-Maintainer and Developer  
-[Michael Aerni](https://www.michaelaerni.ch)
+Developed by[ Michael Aerni](https://www.michaelaerni.ch)
 
