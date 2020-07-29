@@ -8,23 +8,23 @@ description: >-
 
 ## Product Button
 
-A Snipcart product button. The `data-item-*` attributes are automatically generated based on the product's content. Learn more about [Snipcart's product attributes](https://docs.snipcart.com/v3/setup/products).
+This tag creates a Snipcart product button with all the `data-item-*` attributes according to the product's  content. This is arguably the most important tag as it does all the heavy lifting for you. Learn more about [product attributes](https://docs.snipcart.com/v3/setup/products).
 
 ```text
 {{ snipcart:product }}
 ```
 
-### Overriding attributes
+{% hint style="warning" %}
+The automatic generation of attributes only works when looping through the collection of products. If you use the tag outside of it, you'll have to manually define each attribute yourself.
+{% endhint %}
 
-You can override any attribute directly on the tag.
+### Defining Attributes
+
+You can manually define any accepted attribute directly on the tag. You can also use this to override the values of automatically generated attributes.
 
 ```text
 {{ snipcart:product id="{{ increment }}" name="{{ some_variable }}" }}
 ```
-
-{% hint style="info" %}
-If you use this tag outside of the product collection, you'll have to manually define the product attributes to make it work.
-{% endhint %}
 
 ## Cart Button
 
@@ -62,12 +62,12 @@ The total price of items in the cart.
 
 There are a couple of parameters you may use on the tags.
 
-| Parameter | Description | Support |
+| Parameter | Description | Supported By |
 | :--- | :--- | :--- |
 | `class` | Add classes to the HTML element | `product` `cart` `signin` `items` `price` |
 | `text` | Override the default text | `product` `cart` `signin` |
 
-**Example:** Style the button and override the default text.
+**Example:** Add some classes to the cart button and override the default text.
 
 ```text
 {{ snipcart:cart class="p-2 bg-gray-100" text="Checkout" }}
