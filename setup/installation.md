@@ -20,6 +20,12 @@ composer require aerni/snipcart
 The vendor assets will be **automatically** published during the installation process. The addon's default config will be merged and the translations loaded.
 {% endhint %}
 
+If you get an error saying `Fatal error: Allowed memory size of 1610612736 bytes exhausted`, use this command instead:
+
+```bash
+COMPOSER_MEMORY_LIMIT=-1 composer require aerni/snipcart
+```
+
 ## Setup Views
 
 ### Head Tag
