@@ -6,7 +6,7 @@ description: >-
 
 # Snipcart
 
-## Product button
+## Product Button
 
 A Snipcart product button. The `data-item-*` attributes are automatically generated based on the product's content. Learn more about [Snipcart's product attributes](https://docs.snipcart.com/v3/setup/products).
 
@@ -26,7 +26,7 @@ You can override any attribute directly on the tag.
 If you use this tag outside of the product collection, you'll have to manually define the product attributes to make it work.
 {% endhint %}
 
-## Cart button
+## Cart Button
 
 A Snipcart cart button.
 
@@ -34,7 +34,7 @@ A Snipcart cart button.
 {{ snipcart:cart }}
 ```
 
-## Sign-in button
+## Sign-in Button
 
 A Snipcart sign-in button.
 
@@ -42,7 +42,7 @@ A Snipcart sign-in button.
 {{ snipcart:signin }}
 ```
 
-## Total items
+## Total Items
 
 The total number of items in the cart.
 
@@ -50,7 +50,7 @@ The total number of items in the cart.
 {{ snipcart:items }}
 ```
 
-## Total price
+## Total Price
 
 The total price of items in the cart.
 

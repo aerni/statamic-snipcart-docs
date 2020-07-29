@@ -4,7 +4,7 @@ description: Output data of the weight unit defined in the config.
 
 # Weight
 
-## Weight abbreviation
+## Abbreviation
 
 The abbreviation of the weight unit, e.g. `kg`.
 
@@ -12,7 +12,7 @@ The abbreviation of the weight unit, e.g. `kg`.
 {{ weight:short }}
 ```
 
-## Weight name
+## Name
 
 The singular/plural name of the weight unit according to the value saved in the product, e.g. `Kilogram/Kilograms`.
 
@@ -20,7 +20,7 @@ The singular/plural name of the weight unit according to the value saved in the 
 {{ weight:name }}
 ```
 
-## Weight singular name
+## Singular Name
 
 The singular name of the weight unit, e.g. `Kilogram`.
 
@@ -28,7 +28,7 @@ The singular name of the weight unit, e.g. `Kilogram`.
 {{ weight:singular }}
 ```
 
-## Weight plural name
+## Plural Name
 
 The plural name of the weight unit, e.g. `Kilograms`.
 
