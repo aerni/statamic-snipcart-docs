@@ -6,7 +6,7 @@ description: There's a bunch of configuration options to tailor the addon to you
 
 ## Collections & Taxonomies
 
-Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands) to re-generate the collection/taxonomies and product blueprint.
+Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands) to re-generate the collection, taxonomies, and blueprints.
 
 ```php
 'collections' => [
@@ -46,7 +46,7 @@ The Snipcart version you want to use.
 
 ## Currency
 
-Define the currency you want to use.
+The currency you want to use.
 
 ```php
 'currency' => 'USD',
@@ -54,8 +54,7 @@ Define the currency you want to use.
 
 ## Length Unit
 
-Define the length unit you want to use.   
-You can choose between the following options: `cm` `m` `in` `ft`
+The length unit you want to use. Choose between the following options: `cm` `m` `in` `ft`.
 
 ```php
 'length' => 'cm',
@@ -63,8 +62,7 @@ You can choose between the following options: `cm` `m` `in` `ft`
 
 ## Weight Unit
 
-Define the weight unit you want to use.   
-You can choose between the following options: `g` `kg` `oz` `lb`
+The weight unit you want to use. Choose between the following options: `g` `kg` `oz` `lb`.
 
 ```php
 'weight' => 'g',
@@ -72,8 +70,7 @@ You can choose between the following options: `g` `kg` `oz` `lb`
 
 ## Cart Behaviour
 
-Set this to `none` to prevent the cart from opening every time a product is added.   
-Default is `null`
+Set this to `none` to prevent the cart from opening every time a product is added.
 
 ```php
 'behaviour' => null,
@@ -81,7 +78,7 @@ Default is `null`
 
 ## Cart Image
 
-Define a Glide preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `'manipulation' => false`
+Define a Glide preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `manipulation` to `false`.
 
 ```php
 'image' => [
