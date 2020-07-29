@@ -16,6 +16,10 @@ composer require aerni/snipcart
 
 **Option 2:** Install the addon through the Addons section in the Statamic Control Panel.
 
+{% hint style="info" %}
+The vendor assets will be **automatically** published during the installation process. The addon's default config will be merged and the translations loaded.
+{% endhint %}
+
 ## Setup Views
 
 ### Head Tag
