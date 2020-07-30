@@ -31,7 +31,7 @@ The config and translations are automatically merged and loaded. You can publish
 Publish the config to `config/snipcart.php` 
 
 ```text
-php please vendor:publish --tag="snipcart-config"
+php please vendor:publish --tag=snipcart-config
 ```
 
 ### **Translations**
@@ -39,6 +39,6 @@ php please vendor:publish --tag="snipcart-config"
 Publish the translations to `resources/lang/vendor/snipcart` 
 
 ```text
-php please vendor:publish --tag="snipcart-translations"
+php please vendor:publish --tag=snipcart-translations
 ```
 
