@@ -4,6 +4,14 @@ description: There's a bunch of configuration options to tailor the addon to you
 
 # Configuration
 
+## Publish Config
+
+To start customizing the config, you first need to publish it to `config/snipcart.php` using this command:
+
+```text
+php please vendor:publish --tag=snipcart-config
+```
+
 ## Collections & Taxonomies
 
 Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands) to re-generate the collection, taxonomies, and blueprints.

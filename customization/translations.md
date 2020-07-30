@@ -4,6 +4,14 @@ description: You can customize translations or add your own.
 
 # Translations
 
+## Publish Translations
+
+To start customizing the translations, you first need to publish them to `resources/lang/vendor/snipcart` using this command:
+
+```text
+php please vendor:publish --tag=snipcart-translations
+```
+
 ## Customize Translations
 
 ### Buttons
