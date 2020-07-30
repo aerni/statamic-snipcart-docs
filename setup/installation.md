@@ -1,6 +1,6 @@
 ---
 description: >-
-  Install the addon, setup your views and add your Snipcart API Keys to get
+  Install the addon, add your Snipcart API Keys and setup your views to get
   started.
 ---
 
@@ -24,6 +24,15 @@ If you get an error saying `Fatal error: Allowed memory size of 1610612736 bytes
 
 ```bash
 COMPOSER_MEMORY_LIMIT=-1 composer require aerni/snipcart
+```
+
+## Add Snipcart API Keys
+
+Add your Snipcart API keys to your `.env` file. You can find the keys in your [Snipcart dashboard](https://app.snipcart.com/dashboard/account/credentials).
+
+```bash
+SNIPCART_LIVE_KEY=************************
+SNIPCART_TEST_KEY=************************
 ```
 
 ## Setup Views
@@ -56,14 +65,5 @@ If you want more control, you may add the **container** and **script** separatel
 ```markup
 {{ snipcart:container }}
 {{ snipcart:script }}
-```
-
-## Add Snipcart API Keys
-
-Add your Snipcart API keys to your `.env` file. You can find the keys in your [Snipcart dashboard](https://app.snipcart.com/dashboard/account/credentials).
-
-```bash
-SNIPCART_LIVE_KEY=************************
-SNIPCART_TEST_KEY=************************
 ```
 
