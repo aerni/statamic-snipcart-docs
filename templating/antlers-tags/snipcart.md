@@ -6,12 +6,12 @@ description: >-
 
 # Snipcart
 
-## Product Button
+## Buy Button
 
-This tag creates a Snipcart product button with all the `data-item-*` attributes according to the product's  content. This is arguably the most important tag as it does all the heavy lifting for you. Learn more about [product attributes](https://docs.snipcart.com/v3/setup/products).
+This tag creates a Snipcart product buy button with all the `data-item-*` attributes according to the product's content. This is arguably the most important tag as it does all the heavy lifting for you. Learn more about [product attributes](https://docs.snipcart.com/v3/setup/products).
 
 ```text
-{{ snipcart:product }}
+{{ snipcart:buy }}
 ```
 
 {% hint style="warning" %}
@@ -23,8 +23,20 @@ The automatic generation of attributes only works when looping through the colle
 You can manually define any accepted attribute directly on the tag. You can also use this to override the values of automatically generated attributes.
 
 ```text
-{{ snipcart:product id="{{ increment }}" name="{{ some_variable }}" }}
+{{ snipcart:buy id="{{ increment }}" name="{{ some_variable }}" }}
 ```
+
+### Customize Button
+
+You can also fully customize your buy buttons with your own markup. Use this tag to get the product's data-attributes:
+
+```text
+{{ snipcart:attributes }}
+```
+
+{% hint style="warning" %}
+Don't forget to add the class **snipcart-add-item** to turn the element into a Snipcart product.
+{% endhint %}
 
 ## Cart Button
 
@@ -64,8 +76,8 @@ There are a couple of parameters you may use on the tags.
 
 | Parameter | Description | Supported By |
 | :--- | :--- | :--- |
-| `class` | Add classes to the HTML element | `product` `cart` `signin` `items` `price` |
-| `text` | Override the default text | `product` `cart` `signin` |
+| `class` | Add classes to the HTML element | `buy` `cart` `signin` `items` `price` |
+| `text` | Override the default text | `buy` `cart` `signin` |
 
 **Example:** Add some classes to the cart button and override the default text.
 

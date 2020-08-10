@@ -22,6 +22,14 @@ php please snipcart:setup --force
 The setup command is run **automatically** during the installation process. You only need to manually run it, if you [change a collection or taxonomy handle](https://snipcart.docs.michaelaerni.ch/setup/configuration#collections-and-taxonomies) in the addon's config.
 {% endhint %}
 
+## Migrate Content
+
+The migrate command converts the length and weight of your products to the unit set in the config.
+
+```text
+php please snipcart:migrate
+```
+
 ## **Publish Assets**
 
 The config and translations are automatically merged and loaded. You can publish them using the following commands.
