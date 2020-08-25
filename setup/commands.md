@@ -30,6 +30,10 @@ The migrate command updates your products collection and entries according to th
 php please snipcart:migrate
 ```
 
+{% hint style="info" %}
+You need to run this command if you [add or remove a site or change a value](https://snipcart.docs.michaelaerni.ch/setup/configuration#sites).
+{% endhint %}
+
 ## **Publish Assets**
 
 The config and translations are automatically merged and loaded. You can publish them using the following commands.
