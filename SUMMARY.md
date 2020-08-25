@@ -16,6 +16,7 @@
   * [Currency](templating/antlers-tags/currency.md)
   * [Length](templating/antlers-tags/length.md)
   * [Weight](templating/antlers-tags/weight.md)
+* [Modifiers](templating/modifiers.md)
 
 ## Customization
 
