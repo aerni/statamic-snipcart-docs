@@ -12,6 +12,24 @@ To start customizing the config, you first need to publish it to `config/snipcar
 php please vendor:publish --tag=snipcart-config
 ```
 
+## Sites
+
+This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). Define the currency, length and weight unit for each site defined in `config/statamic/site.php` . 
+
+If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
+
+```php
+'sites' => [
+
+    'default' => [
+        'currency' => 'USD',
+        'length' => 'in',
+        'weight' => 'oz',
+    ],
+    
+],
+```
+
 ## Collections & Taxonomies
 
 Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands#setup-content) to re-generate the collection, taxonomies, and blueprints.
@@ -24,7 +42,7 @@ Define the handles of the products collection and taxonomies. If you change a va
 'taxonomies' => [
     'categories' => 'categories',
     'taxes' => 'taxes',
-]
+],
 ```
 
 ## Snipcart API Keys
@@ -50,30 +68,6 @@ The Snipcart version you want to use.
 
 ```php
 'version' => '3.0.19',
-```
-
-## Currency
-
-The currency you want to use.
-
-```php
-'currency' => 'USD',
-```
-
-## Length Unit
-
-The length unit you want to use. Choose between the following options: `cm` `m` `in` `ft`. If you change a value, you may [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to convert your products' lengths to the new unit.
-
-```php
-'length' => 'cm',
-```
-
-## Weight Unit
-
-The weight unit you want to use. Choose between the following options: `g` `kg` `oz` `lb`. If you change a value, you may [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to convert your products' lengths to the new unit.
-
-```php
-'weight' => 'g',
 ```
 
 ## Cart Behaviour

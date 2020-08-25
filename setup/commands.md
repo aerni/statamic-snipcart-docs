@@ -24,7 +24,7 @@ The setup command is run **automatically** during the installation process. You 
 
 ## Migrate Content
 
-The migrate command converts the length and weight of your products to the unit set in the config.
+The migrate command updates your products collection and entries according to the settings defined in the `sites` array in `config/snipcart.php`.
 
 ```text
 php please snipcart:migrate
