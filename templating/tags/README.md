@@ -1,5 +1,5 @@
 ---
-description: There are a couple of useful tags to output certain HTML elements and data.
+description: There are a couple of useful tags to output HTML elements and data.
 ---
 
 # Tags

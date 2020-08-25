@@ -11,11 +11,11 @@
 ## Templating
 
 * [Products](templating/basics.md)
-* [Antlers Tags](templating/antlers-tags/README.md)
-  * [Snipcart](templating/antlers-tags/snipcart.md)
-  * [Currency](templating/antlers-tags/currency.md)
-  * [Length](templating/antlers-tags/length.md)
-  * [Weight](templating/antlers-tags/weight.md)
+* [Tags](templating/tags/README.md)
+  * [Snipcart](templating/tags/snipcart.md)
+  * [Currency](templating/tags/currency.md)
+  * [Length](templating/tags/length.md)
+  * [Weight](templating/tags/weight.md)
 * [Modifiers](templating/modifiers.md)
 
 ## Customization
