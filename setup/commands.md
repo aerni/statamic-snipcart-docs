@@ -6,20 +6,20 @@ description: There are a couple of helpful commands at your service.
 
 ## Setup Content
 
-The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. It is careful enough to not override existing collections, taxonomies, and blueprints with the same handle.
+The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. This won't override existing collections, taxonomies, and blueprints.
 
 ```bash
 php please snipcart:setup
 ```
 
-You can override existing collections, taxonomies, and blueprints by adding the `--force` flag to the command.
+You can restore the collections, taxonomies, and blueprints to their factory preset by adding the `--force` flag to the command. This will purge all the changes you may have made.
 
 ```text
 php please snipcart:setup --force
 ```
 
 {% hint style="info" %}
-The setup command is run **automatically** during the installation process. You only need to manually run it, if you [change a collection or taxonomy handle](https://snipcart.docs.michaelaerni.ch/setup/configuration#collections-and-taxonomies) in the addon's config.
+The setup command is run automatically during the installation process. You only need to manually run it, if you [change a collection or taxonomy handle](https://snipcart.docs.michaelaerni.ch/setup/configuration#collections-and-taxonomies) in the addon's config.
 {% endhint %}
 
 ## Migrate Content

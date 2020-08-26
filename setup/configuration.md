@@ -14,9 +14,7 @@ php please vendor:publish --tag=snipcart-config
 
 ## Sites
 
-This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). Define the currency, length and weight unit for each site defined in `config/statamic/site.php` . 
-
-If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
+This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). This lets you define the currency, length and weight unit for each site defined in `config/statamic/site.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
 
 ```php
 'sites' => [
@@ -72,7 +70,7 @@ The Snipcart version you want to use.
 
 ## Cart Behaviour
 
-Set this to `none` to prevent the cart from opening every time a product is added.
+Set this to `'none'` to prevent the cart from opening every time a product is added.
 
 ```php
 'behaviour' => null,
@@ -80,7 +78,7 @@ Set this to `none` to prevent the cart from opening every time a product is adde
 
 ## Cart Image
 
-Define a Glide preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `manipulation` to `false`.
+Define a [Glide](https://statamic.dev/tags/glide) preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `manipulation` to `false`.
 
 ```php
 'image' => [

@@ -48,7 +48,7 @@ Add this tag to the `<head>` of your view to render Snipcart's **preconnect hint
 If you want more control, you may add the **preconnect hints** and **stylesheet** separately instead.
 
 ```markup
-{{ snipcart:preconnet }}
+{{ snipcart:preconnect }}
 {{ snipcart:stylesheet }}
 ```
 
