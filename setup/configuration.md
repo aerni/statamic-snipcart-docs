@@ -14,7 +14,7 @@ php please vendor:publish --tag=snipcart-config
 
 ## Sites
 
-This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). This lets you define the currency, length and weight unit for each site defined in `config/statamic/site.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
+This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). This lets you define the currency, length and weight unit for each site defined in `config/statamic/sites.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
 
 ```php
 'sites' => [
