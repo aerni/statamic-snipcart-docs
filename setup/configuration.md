@@ -28,6 +28,10 @@ This addon supports [Statamic Multi-Sites](https://statamic.dev/multi-site). Thi
 ],
 ```
 
+{% hint style="warning" %}
+The sites need to be in sync with Statamic's sites config. Make sure to add a new key for each site defined in **config/statamic/sites.php**
+{% endhint %}
+
 ## Collections & Taxonomies
 
 Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands#setup-content) to re-generate the collection, taxonomies, and blueprints.
