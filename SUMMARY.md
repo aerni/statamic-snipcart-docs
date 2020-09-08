@@ -15,6 +15,7 @@
   * [Snipcart](templating/tags/snipcart.md)
   * [Currency](templating/tags/currency.md)
   * [Length](templating/tags/length.md)
+  * [Variations](templating/tags/variations.md)
   * [Weight](templating/tags/weight.md)
 * [Modifiers](templating/modifiers.md)
 
