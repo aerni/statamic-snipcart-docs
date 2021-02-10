@@ -1,7 +1,5 @@
 ---
-description: >-
-  Install the addon, add your Snipcart API Keys and setup your views to get
-  started.
+description: Follow the following instructions to setup Snipcart for Statamic.
 ---
 
 # Installation
@@ -16,14 +14,12 @@ composer require aerni/snipcart
 
 **Option 2:** Install the addon through the Addons section in the Statamic Control Panel.
 
-{% hint style="info" %}
-The vendor assets will be **automatically** published during the installation process. The addon's default config will be merged and the translations loaded.
-{% endhint %}
+## Publish Config
 
-If you get an error saying `Fatal error: Allowed memory size of 1610612736 bytes exhausted`, use this command instead:
+Publish the config with the following command. The config will be published to `config/snipcart.php` .
 
-```bash
-COMPOSER_MEMORY_LIMIT=-1 composer require aerni/snipcart
+```text
+php please vendor:publish --tag=snipcart-config
 ```
 
 ## Add Snipcart API Keys
@@ -32,8 +28,15 @@ Add your Snipcart API keys to your `.env` file. You can find the keys in your [S
 
 ```bash
 SNIPCART_LIVE_KEY=************************
+SNIPCART_LIVE_SECRET=************************
+
 SNIPCART_TEST_KEY=************************
+SNIPCART_TEST_SECRET=************************
 ```
+
+## Add Webhook URL
+
+Add the absolute URL of your Snipcart Webhook in your [Snipcart Dashboard](https://app.snipcart.com/dashboard/webhooks). You can [customize the webhook route](https://snipcart.docs.michaelaerni.ch/setup/configuration#snipcart-webhook-route) in the config. The default route is `webhooks/snipcart`.
 
 ## Setup Views
 

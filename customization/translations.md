@@ -1,5 +1,5 @@
 ---
-description: You can customize translations or add your own.
+description: You can customize the default translations or add your own.
 ---
 
 # Translations

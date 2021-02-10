@@ -1,12 +1,27 @@
+---
+description: >-
+  There are a couple of useful modifiers to help you format variables in your
+  templates.
+---
+
 # Modifiers
 
 ## Add Operator
 
-Use this modifier to prepend the operator to a money variable.
+Use this modifier to prepend the correct operator to a money variable.
 
 ```markup
 {{ price_modifier }} // $1.00
 {{ price_modifier | add_operator }} // +$1.00
+```
+
+## Format Price
+
+Use this modifier to format an integer price variable to a nice currency string.
+
+```markup
+{{ price }} // 1699
+{{ price | format_price }} // $16.99
 ```
 
 ## Strip Unit
@@ -22,17 +37,5 @@ Use this modifier to strip the currency, length, or weight unit from a variable.
 
 {{ weight }} // 3.5 oz
 {{ weight | strip_unit }} // 3.5
-```
-
-## Total
-
-Use this modifier to calculate the total price of a product variation option.
-
-```markup
-{{ variations }}
-    {{ options }}
-        {{ price | total }}
-    {{ /options }}
-{{ /variations }}
 ```
 

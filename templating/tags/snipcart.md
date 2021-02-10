@@ -15,10 +15,10 @@ This tag creates a Snipcart product buy button with all the `data-item-*` attrib
 ```
 
 {% hint style="warning" %}
-The automatic generation of attributes only works when looping through the collection of products. If you use the tag outside of it, you'll have to manually define each attribute yourself.
+The automatic generation of attributes only works inside a products collection loop. If you use the tag outside of the loop, you will have to manually define each attribute yourself.
 {% endhint %}
 
-### Defining Attributes
+### Manually Defining Attributes
 
 You can manually define any accepted attribute directly on the tag. You can also use this to override the values of automatically generated attributes.
 

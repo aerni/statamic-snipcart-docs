@@ -1,12 +1,14 @@
 ---
-description: There are a couple of helpful commands at your service.
+description: >-
+  There are a couple of helpful commands to help you with the setup of Snipcart
+  for Statamic.
 ---
 
 # Commands
 
 ## Setup Content
 
-The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. This won't override existing collections, taxonomies, and blueprints.
+The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. The command won't override existing collections, taxonomies, and blueprints.
 
 ```bash
 php please snipcart:setup

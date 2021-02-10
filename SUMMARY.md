@@ -8,14 +8,18 @@
 * [Configuration](setup/configuration.md)
 * [Commands](setup/commands.md)
 
+## Basics
+
+* [Multi-Sites](basics/multi-sites.md)
+
 ## Templating
 
-* [Products](templating/basics.md)
+* [Basics](templating/basics.md)
 * [Tags](templating/tags/README.md)
   * [Snipcart](templating/tags/snipcart.md)
+  * [Stock](templating/tags/stock.md)
   * [Currency](templating/tags/currency.md)
   * [Length](templating/tags/length.md)
-  * [Variations](templating/tags/variations.md)
   * [Weight](templating/tags/weight.md)
 * [Modifiers](templating/modifiers.md)
 
@@ -23,4 +27,9 @@
 
 * [Blueprints](customization/blueprints.md)
 * [Translations](customization/translations.md)
+
+## Advanced
+
+* [Snipcart API](advanced/snipcart-api.md)
+* [Snipcart Webhooks](advanced/snipcart-webhooks.md)
 

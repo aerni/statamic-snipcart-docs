@@ -1,6 +1,4 @@
-# Products
-
-## Basics
+# Basics
 
 The products are stored in a regular ****collection. You can access the data using Statamic's collection tag with all its bells and whistles. Nothing fancy here.
 
@@ -11,8 +9,4 @@ The products are stored in a regular ****collection. You can access the data usi
     {{ title }}
 {{ /collection:products }}
 ```
-
-## Creating Products
-
-…
 

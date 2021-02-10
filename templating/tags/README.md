@@ -10,6 +10,12 @@ Output Snipcart-specific HTML elements like a product button or the total number
 
 {% page-ref page="snipcart.md" %}
 
+## Stock
+
+Get the stock of a product from the Snipcart Dashboard.
+
+{% page-ref page="stock.md" %}
+
 ## Currency
 
 Output data of the currency defined in the config.

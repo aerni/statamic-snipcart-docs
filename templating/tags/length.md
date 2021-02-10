@@ -12,30 +12,6 @@ The abbreviation of the length unit, e.g. `cm`.
 {{ length:short }}
 ```
 
-## Length Name
-
-The singular/plural name of the length unit for the length according to the value saved in the product, e.g. `Centimeter/Centimeters`.
-
-```text
-{{ length:lengthName }}
-```
-
-## Width Name
-
-The singular/plural name of the length unit for the width according to the value saved in the product, e.g. `Centimeter/Centimeters`.
-
-```text
-{{ length:widthName }}
-```
-
-## Height Name
-
-The singular/plural name of the length unit for the height according to the value saved in the product, e.g. `Centimeter/Centimeters`.
-
-```text
-{{ length:heightName }}
-```
-
 ## Singular Name
 
 The singular name of the length unit, e.g. `Centimeter`.
@@ -50,6 +26,30 @@ The plural name of the length unit, e.g. `Centimeters`.
 
 ```text
 {{ length:plural }}
+```
+
+## Length Name
+
+Automatically get the singular or plural name of the length unit according to the product's length, e.g. `Centimeter/Centimeters`.
+
+```text
+{{ length:lengthName }}
+```
+
+## Width Name
+
+Automatically get the singular or plural name of the length unit according to the product's width, e.g. `Centimeter/Centimeters`.
+
+```text
+{{ length:widthName }}
+```
+
+## Height Name
+
+Automatically get the singular or plural name of the length unit according to the product's height, e.g. `Centimeter/Centimeters`.
+
+```text
+{{ length:heightName }}
 ```
 
 \*\*\*\*

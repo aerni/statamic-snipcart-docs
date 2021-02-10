@@ -12,14 +12,6 @@ The abbreviation of the weight unit, e.g. `kg`.
 {{ weight:short }}
 ```
 
-## Name
-
-The singular/plural name of the weight unit according to the value saved in the product, e.g. `Kilogram/Kilograms`.
-
-```text
-{{ weight:name }}
-```
-
 ## Singular Name
 
 The singular name of the weight unit, e.g. `Kilogram`.
@@ -34,5 +26,13 @@ The plural name of the weight unit, e.g. `Kilograms`.
 
 ```text
 {{ weight:plural }}
+```
+
+## Name
+
+Automatically get the singular or plural name of the weight unit according to the product's weight, e.g. `Kilogram/Kilograms`.
+
+```text
+{{ weight:name }}
 ```
 

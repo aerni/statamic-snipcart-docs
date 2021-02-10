@@ -1,20 +1,14 @@
 ---
-description: There's a bunch of configuration options to tailor the addon to your needs.
+description: >-
+  You can configure Snipcart for Statamic with the configuration options
+  outlined on this page.
 ---
 
 # Configuration
 
-## Publish Config
-
-To start customizing the config, you first need to publish it to `config/snipcart.php` using this command:
-
-```text
-php please vendor:publish --tag=snipcart-config
-```
-
 ## Sites
 
-Define the currency, length and weight unit for each site defined in `config/statamic/sites.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
+Define the currency, length, and weight unit for each site defined in `config/statamic/sites.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
 
 ```php
 'sites' => [
@@ -53,7 +47,10 @@ Your Snipcart API Keys for the Live and Test Environment.
 
 ```php
 'live_key' => env('SNIPCART_LIVE_KEY'),
+'live_secret' => env('SNIPCART_LIVE_SECRET'),
+
 'test_key' => env('SNIPCART_TEST_KEY'),
+'test_secret' => env('SNIPCART_TEST_SECRET'),
 ```
 
 ## Test Mode
@@ -69,7 +66,7 @@ Set this to `false` to start processing real transactions. You probably want to 
 The Snipcart version you want to use.
 
 ```php
-'version' => '3.0.19',
+'version' => '3.0.29',
 ```
 
 ## Cart Behaviour
@@ -89,5 +86,21 @@ Define a [Glide](https://statamic.dev/tags/glide) preset to be applied to the pr
     'manipulation' => true,
     'preset' => ['w' => 240, 'q' => 75],
 ]
+```
+
+## Snipcart API Cache Lifetime
+
+Define the cache lifetime of Snipcart API responses in seconds. The API is used for things like fetching the stock of a product.
+
+```php
+'api_cache_lifetime' => 3600,
+```
+
+## Snipcart Webhook Route
+
+Define the route where the Snipcart webhook requests will be sent to. Don't forget to [add this URL in your Snipcart Dashboard](https://app.snipcart.com/dashboard/webhooks). Set this to `null` to remove the route.
+
+```php
+'webhook' => 'webhooks/snipcart',
 ```
 
