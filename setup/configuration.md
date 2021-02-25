@@ -1,14 +1,18 @@
 ---
 description: >-
   You can configure Snipcart for Statamic with the configuration options
-  outlined on this page.
+  outlined below.
 ---
 
 # Configuration
 
 ## Sites
 
-Define the currency, length, and weight unit for each site defined in `config/statamic/sites.php`. If you add or remove a site or change a value, you need to [run the migration command](https://snipcart.docs.michaelaerni.ch/setup/commands#migrate-content) to update the products collection and entries.
+Set the currency, length and weight units for each Statamic site. The units set for Statamic's default site act as default Snipcart units. The units of your other sites will be converted from it. 
+
+**Supported currencies:** ISO 4217 letter codes supported by Snipcart, eg. `USD` or `EUR`  
+**Supported length units:** `cm`, `m`, `in`, `ft`  
+**Supported weight units:** `g`, `kg`, `oz`, `lb`
 
 ```php
 'sites' => [
@@ -23,12 +27,16 @@ Define the currency, length, and weight unit for each site defined in `config/st
 ```
 
 {% hint style="warning" %}
-The sites need to be in sync with Statamic's sites config. Make sure to add a new key for each site defined in **config/statamic/sites.php**
+Make sure to keep the sites in sync with your Statamic sites. You can do so by [running the sync-sites command](https://snipcart.docs.michaelaerni.ch/setup/commands#sync-sites).
+{% endhint %}
+
+{% hint style="warning" %}
+Whenever you update a site, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands#setup) to update your products collection and entries.
 {% endhint %}
 
 ## Collections & Taxonomies
 
-Define the handles of the products collection and taxonomies. If you change a value, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands#setup-content) to re-generate the collection, taxonomies, and blueprints.
+Define the handles of the products collection and categories taxonomy.
 
 ```php
 'collections' => [
@@ -37,9 +45,12 @@ Define the handles of the products collection and taxonomies. If you change a va
 
 'taxonomies' => [
     'categories' => 'categories',
-    'taxes' => 'taxes',
 ],
 ```
+
+{% hint style="warning" %}
+Whenever you change a handle, you need to [run the setup command](https://snipcart.docs.michaelaerni.ch/setup/commands#setup) to setup the new products collection and categories taxonomy.
+{% endhint %}
 
 ## Snipcart API Keys
 
@@ -71,7 +82,7 @@ The Snipcart version you want to use.
 
 ## Cart Behaviour
 
-Set this to `'none'` to prevent the cart from opening every time a product is added.
+Set this to `none` to prevent the cart from opening every time a product is added. Default is `null`.
 
 ```php
 'behaviour' => null,
@@ -79,7 +90,7 @@ Set this to `'none'` to prevent the cart from opening every time a product is ad
 
 ## Cart Image
 
-Define a [Glide](https://statamic.dev/tags/glide) preset to be applied to the product image that shows in the cart. You may also turn the manipulation off by setting `manipulation` to `false`.
+Define a [Glide](https://statamic.dev/tags/glide) preset to be applied to the product image that shows in the cart. You may also turn the manipulation off \(not recommended\).
 
 ```php
 'image' => [

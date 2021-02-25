@@ -1,14 +1,14 @@
 ---
 description: >-
-  There are a couple of helpful commands to help you with the setup of Snipcart
-  for Statamic.
+  There are a couple of commands to help you with the setup of Snipcart for
+  Statamic.
 ---
 
 # Commands
 
-## Setup Content
+## Setup
 
-The setup command creates all the necessary collections, taxonomies, and blueprints to get you started. The command won't override existing collections, taxonomies, and blueprints.
+The `setup` command creates all the necessary collections, taxonomies, and blueprints to get you started. The command won't override existing collections, taxonomies, and blueprints.
 
 ```bash
 php please snipcart:setup
@@ -21,19 +21,19 @@ php please snipcart:setup --force
 ```
 
 {% hint style="info" %}
-The setup command is run automatically during the installation process. You only need to manually run it, if you [change a collection or taxonomy handle](https://snipcart.docs.michaelaerni.ch/setup/configuration#collections-and-taxonomies) in the addon's config.
+You need to run this command whenever you update your [Sites](https://snipcart.docs.michaelaerni.ch/setup/configuration#sites) or [Collections & Taxonomies](https://snipcart.docs.michaelaerni.ch/setup/configuration#collections-and-taxonomies) in your config.
 {% endhint %}
 
-## Migrate Content
+## **Sync Sites**
 
-The migrate command updates your products collection and entries according to the settings defined in the `sites` array in `config/snipcart.php`.
+The `sync-sites` command syncs your Snipcart sites in with your Statamic sites.
 
 ```text
-php please snipcart:migrate
+php please snipcart:sync-sites
 ```
 
 {% hint style="info" %}
-You need to run this command if you [add or remove a site or change a value](https://snipcart.docs.michaelaerni.ch/setup/configuration#sites).
+Run this command whenever you **add** or **delete** a Statamic site or **change** a site's handle. 
 {% endhint %}
 
 ## **Publish Assets**
